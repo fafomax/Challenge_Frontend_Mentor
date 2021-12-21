@@ -1,0 +1,212 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+:root{
+/* #### Text */
+--Very-dark-desaturated-blue: hsl(238, 29%, 16%);
+--Soft-red: hsl(14, 88%, 65%);
+
+/* #### Gradient */
+/* Background gradient: */
+
+--Soft-violet: hsl(273, 75%, 66%);
+--Soft-blue: hsl(240, 73%, 65%);
+
+/* #### Dividers */
+--Light-grayish-blue: hsl(240, 5%, 91%);
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    list-style: none;
+}
+
+body {
+    background: linear-gradient(0deg, hsla(240, 73%, 65%, 0.884), hsla(273, 75%, 66%, 0.918));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: "Kumbh Sans", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+}
+
+
+
+main{
+    width: 85%;
+    height: 550px;
+    background-color: white;
+    border-radius: 25px;
+    box-shadow: 0px 20px 30px hsla(238, 29%, 16%, 0.507);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 70px;
+    
+}
+
+.img_1{
+    position: relative;
+    z-index: 1;
+    /* margin-left: 70px; */
+}
+
+
+.img_2{
+    z-index: 0;
+    position: relative;
+    margin-top: -75px;
+    
+}
+
+.img_principal {
+    /* box-shadow: 0px 20px 30px hsla(238, 29%, 16%, 0.507); */
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    width: 230px;
+    margin-top: -105px;
+}
+
+
+.section_1{
+    margin-right: 20px;
+    margin-left: 20px;
+    margin-top:130px;
+    line-height: 20px;
+    width: 80%;
+    /* overflow: hidden; */
+    
+    
+}
+
+
+.section_1 h1 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom:30px;
+    font-weight: 700;
+
+}
+
+.lista_1{
+    font-weight: 400;
+    
+}
+
+
+
+
+li{
+    padding-bottom: 1em;
+    border-bottom: 1px solid var(--Light-grayish-blue);
+    margin-bottom: 1em;
+}
+
+.lista_1_texto_visible:hover{
+    color: var(--Soft-red);
+    cursor: pointer;
+}
+
+
+li img{
+    width: 10px;
+    height: 8px;
+    margin-top: 3px;
+}
+
+.lista_1_texto_visible{
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    padding-bottom: 0.5em;
+}
+
+.texto_oculto {
+    display: none;
+}
+
+
+.flechita.rotada{
+    transform: rotate(180deg);
+}
+
+.img-cubito{
+    display: none;
+}
+
+
+@media only screen and (min-width:1400px){
+
+    main{
+        width: 65%;
+        display: flex;
+        flex-direction: row;
+        margin-top: 0;
+    }
+
+    .section_1{
+        width: 35%;
+        margin-right: 100px;
+        margin-left: auto;
+        height: 100%;
+        margin-top: 150px;
+                
+    }
+
+    .section_1 h1{
+        text-align: left;
+        font-size: 2.5rem;
+        margin-bottom: 1.2em;
+    }
+
+    .img_principal{
+        display: none;
+    }
+
+    main{
+        background-image: url(../images/illustration-woman-online-desktop.svg), url(../images/bg-pattern-desktop.svg) ;
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-size: 480px, 1000px;
+        background-position-x: -80px, -600px;
+        background-position-y: 80px, -300px;
+    }
+    
+    .img-cubito {
+        position: relative;
+        right:93px;
+        top: 35px;
+        display: flex;
+    }
+
+    .lista_1_texto_visible{
+        font-size: 1rem;
+    }
+
+    li{
+        margin-bottom: 2em;
+    }
+
+    .flechita.rotada{
+        transform: rotate(180deg);
+    }
+}
+
+
+/* footer 
+
+.attribution {
+    font-size: 11px; 
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+.attribution a {
+    color: hsl(228, 45%, 44%); 
+} */
